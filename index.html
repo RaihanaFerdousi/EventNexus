@@ -5,9 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .navbar-title{
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          font-style: normal;
+      }
+      .banner-title{
+        font-size: 40px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+      }
+      .title{
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      .col {
+        text-align: left; 
+        margin-bottom: 20px;
+        width: 200px;
+      }
+
+      .paragraph{
+        color: #848199;
+      }
+      
+      .plan-title {
+        color: #120d34;
+        margin: 10PX 0; 
+        padding: 0;  
+      }
+      
+      .plan-list {
+        list-style-type: none;  
+        padding: 0; 
+        margin: 0; 
+      }
+      
+      .plan-list li {
+        display: flex;
+        align-items: center;  
+        margin: 5px 0; 
+      }
+
+      
+      .plan-list li img.icon {
+        margin-right: 10px;  
+      }
+      
+      button.text-primary {
+        margin-top: 10px;  
+      }
+      
+    </style>
 </head>
 <body>
-    
+  <header class="mb-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid px-5 py-4">
+        <a class="navbar-brand navbar-title" href="#">Abacus Convention Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-4 banner-title">The perfect venue for your <br> next event <br></h5>
+                    <p class="lead">Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim velit </p>
+                    <a href="#" class="btn btn-light text-primary px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+<main>
+  <section>
+    <div style="padding: 50px 100px;" class="d-flex align-items-center gap-5">
+      <div>
+        <img src="/images/wedding.png" alt="">
+      </div>
+      <div>
+        <h2 class="title">Every moment is Precious</h2>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <button type="button" class="btn btn-primary text-light align-center">Explore our album
+          <img src="/icons/arrow-forward 1.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="container my-5">
+    <h3 class="fw-bold text-center my-5 fs-1">Our package</h3>
+    <div class="row gap-5">
+      <div class="col shadow p-4 rounded-4">
+        <h5 class="fs-1 fw-bold plan-title">$300</h5>
+        <h6 class="fs-2 fw-bold plan-title">Business fair</h6>
+        <p class="paragraph">For most businesses event <br> like book fair, craft fair.</p>
+        <ul class="plan-list"> 
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+        </ul>
+        <button type="button" class="text-primary px-5 py-2 rounded-pill" style="border: none;">Choose Plan</button>
+      </div>
+      <div class="col shadow p-4 rounded-4">
+        <h5 class="fs-1 fw-bold plan-title">$300</h5>
+        <h6 class="fs-2 fw-bold plan-title">Business fair</h6>
+        <p class="paragraph">For most businesses event <br> like book fair, craft fair.</p>
+        <ul class="plan-list"> 
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+        </ul>
+        <button type="button" class="text-primary px-5 py-2 rounded-pill" style="border: none;">Choose Plan</button>
+      </div>
+      <div class="col shadow p-5 rounded-4" style="background-color: #3F87F5; color: #fff">
+        <h5 class="fs-1 fw-bold">$300</h5>
+        <h6 class="fs-2 fw-bold">Business fair</h6>
+        <p>For most businesses event <br> like book fair, craft fair.</p>
+        <ul class="plan-list"> 
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+        </ul>
+        <button type="button" class="text-primary px-5 py-2 rounded-pill" style="border: none;">Choose Plan</button>
+      </div>
+      <div class="col shadow p-4 rounded-4">
+        <h5 class="fs-1 fw-bold plan-title">$300</h5>
+        <h6 class="fs-2 fw-bold plan-title">Business fair</h6>
+        <p class="paragraph">For most businesses event <br> like book fair, craft fair.</p>
+        <ul class="plan-list"> 
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+          <li><img class="icon" src="icons/check (1).png" alt="">limited space access</li>
+        </ul>
+        <button type="button" class="text-primary px-5 py-2 rounded-pill" style="border: none;">Choose Plan</button>
+      </div>
+      
+    </div>
+  </section>
+  <section>
+    <h3 class="fw-bold text-center my-5 fs-1">Happy Clients says</h3>
+    <div class="container">
+      <div class="row gap-4 ">
+        <div class="col text-center shadow p-4 rounded-4">
+          <P>Slate helps you see how 
+            many more days you need 
+            to work to reach your financial 
+            goal for the month and year.</P>
+            <img src="/images/person 1.png" alt="">
+            <h5>Regina Miles</h5>
+            <h6>Banker</h6>
+        </div>
+        <div class="col text-center shadow p-4 rounded-4">
+          <P>Slate helps you see how 
+            many more days you need 
+            to work to reach your financial 
+            goal for the month and year.</P>
+            <img src="/images/person 2.png" alt="">
+            <h5>Regina Miles</h5> 
+            <h6>Banker</h6>
+        </div>
+        <div class="col text-center shadow p-4 rounded-4">
+          <P>Slate helps you see how 
+            many more days you need 
+            to work to reach your financial 
+            goal for the month and year.</P>
+            <img src="/images/person 3.png" alt="">
+            <h5>Regina Miles</h5>
+            <h6>Banker</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
